@@ -2,7 +2,8 @@ import streamlit as st
 from transformers import pipeline
 import pandas as pd
 
-st.title('Analyse sentiments')
+st.title('Analyse sentiments with Transformers')
+st.write('Joe Chelladurai')
 st.write('It may a few seconds to run the model.*')
 
 
