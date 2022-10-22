@@ -6,8 +6,6 @@ st.title('Analyse Sentiments with Transformers')
 st.write('Joe Chelladurai')
 st.write('It may a few seconds to run the model.*')
 
-
-
 a = st.radio("Dataset:", ['Example', 'Upload'], 0)
 
 d = {'text': ["I felt that they were excluding me", 
@@ -15,10 +13,6 @@ d = {'text': ["I felt that they were excluding me",
               "There were some hard days, but mostly good days"]}
 
 example_df = pd.DataFrame(data = d)
-
-
-
-
 
 if a == 'Example':
     st.dataframe(example_df)
@@ -30,8 +24,6 @@ else:
     else:
         st.write("Please upload a dataset")
   
-
-
 submit = st.button('Analyse Sentiments')
 
 if submit:
